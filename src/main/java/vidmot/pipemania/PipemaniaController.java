@@ -31,5 +31,21 @@ public class PipemaniaController {
         mania = new Pipemania();
     }
 
+    //fxButar er fx:id inn í scenebuilder þ.e. þetta er eins og pipekista i scenebuilder
+
+    // ObservableList<Pipa> q = pipemania.getPipukista();
+    //q.addListener((ListChangeListener<Pipa>)change ->{
+    //  if(change.next() && change.wasAdded()){
+    //    uppfæra lista hér
+    //          birta Myndir(q);
+    //}
+    //})
+    //Birta myndir(ObservableList<Pipa>q)
+    //  int i = 3;
+    //for(pipa p : q){
+    //fxButar.getChildren().get(i).getStyleClass().clear();
+    //fxButar.getChildren.get(i--).getStyleClass().add(getStyleClasss()
+    //.add(getMyndStyleClass(p));
+
 
 }
