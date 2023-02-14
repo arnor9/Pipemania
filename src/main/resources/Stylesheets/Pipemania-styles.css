@@ -1,3 +1,18 @@
 .SA, .AS{
     -fx-background-image: url("myndir/SA.jpg");
 }
+.NS, .SN{
+    -fx-background-image: url("myndir/SN.jpg");
+}
+.VA, .AV{
+    -fx-background-image: url("myndir/VA.jpg");
+}
+.VS, .SV{
+    -fx-background-image: url("myndir/SV.jpg");
+}
+.VN, .NV{
+    -fx-background-image: url("myndir/NV.jpg");
+}
+.NA, .AN{
+    -fx-background-image: url("myndir/NA.jpg");
+}

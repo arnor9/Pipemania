@@ -1,22 +1,26 @@
 package vinnsla;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleObjectProperty;
+
 public class Pipemania {
-    private int Stig;
+    private IntegerProperty Stig = new SimpleIntegerProperty();
+    private ObjectProperty<Pipa> currentPipa = new SimpleObjectProperty<Pipa>();
     private static final int F = 5;
     private final Pipa[][] pipulogn = new Pipa[F][F];
+    private final ObjectProperty<Pipa> nuverandiPipa = new SimpleObjectProperty<Pipa>();
 
     public Pipemania() {
-        Stig = 0;
+        Stig.set(0);
     }
 
-    public int getStig() {
+    public IntegerProperty getStig() {
         return Stig;
     }
 
-    public void setStig(int s) {
+    public void setStig(IntegerProperty s) {
         Stig = s;
     }
-
-    // public BooleanExpression stigProperty() {
-    //}
 }

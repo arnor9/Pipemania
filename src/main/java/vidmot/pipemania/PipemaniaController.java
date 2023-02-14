@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import vinnsla.Pipa;
 import vinnsla.Pipemania;
 import vinnsla.Pipukista;
 
@@ -33,6 +34,13 @@ public class PipemaniaController {
         System.out.print(daemi);
     }
 
+    public void getStyleClass(Pipa p) {
+        p.getInn();
+        p.getUt();
+        Button hnappur = (Button) ActionEvent.getSource();
+        hnappur.getStyleClass().add(getStilKlasi(p))
+    }
+
     public void fxMynd(ActionEvent event) {
 
     }
@@ -45,7 +53,7 @@ public class PipemaniaController {
 
     public void initialize() {
         mania = new Pipemania();
-        //fxStig.textProperty().bind(mania.stigProperty().asString());
+        fxStig.textProperty().bind(mania.getStig().asString());
     }
 
     //fxButar er fx:id inn í scenebuilder þ.e. þetta er eins og pipekista i scenebuilder
