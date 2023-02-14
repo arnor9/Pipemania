@@ -29,7 +29,7 @@ public class PipemaniaController {
 
     public void fxVeljaReit(ActionEvent event) {
         String daemi;
-        daemi = (((Button) event.getSource()).);
+        daemi = (((Button) event.getSource()).getText());
         System.out.print(daemi);
     }
 

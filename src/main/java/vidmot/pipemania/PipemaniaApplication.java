@@ -12,6 +12,7 @@ public class PipemaniaApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(PipemaniaApplication.class.getResource("Pipemania-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+        scene.getStylesheets().add(getClass().getResource("Pipemania-styles.css").toExternalForm());
         stage.setTitle("Pipemania!");
         stage.setScene(scene);
         stage.show();

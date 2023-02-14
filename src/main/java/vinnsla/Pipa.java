@@ -29,6 +29,8 @@ public class Pipa {
         this.ut = Att.values()[r];
     }
 
+    //Skeita saman áttunum til þess að fá nafni ð pípunni
+
     public Pipa() {
         this.inn = Att.V;
         this.ut = Att.S;

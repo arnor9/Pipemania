@@ -2,7 +2,8 @@ package vinnsla;
 
 public class Pipemania {
     private int Stig;
-    private final Pipa[][] pipulogn = new Pipa[5][5];
+    private static final int F = 5;
+    private final Pipa[][] pipulogn = new Pipa[F][F];
 
     public Pipemania() {
         Stig = 0;
