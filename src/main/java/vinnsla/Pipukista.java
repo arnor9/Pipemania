@@ -9,9 +9,8 @@ public class Pipukista {
 
     private final ObservableList<Pipa> kista = FXCollections.observableArrayList();
 
-    public Pipukista(int i) {
-        int fjoldi = 4;
-        for (int i = 0; i < fjoldi; i++) {
+    public Pipukista(int f) {
+        for (int i = 0; i < f; i++) {
             kista.add(nyPipa());
         }
     }
@@ -19,15 +18,17 @@ public class Pipukista {
     Random random = new Random();
 
     private Pipa nyPipa() {
-        return Pipa(RandomInn, RandomUt);
+
+        int RandomInn = 1;
+        int RandomUt = 2;
+
+        return new Pipa(RandomInn, RandomUt);
     }
 
     public Pipa naestaPipa() {
         kista.remove(0);
-        kista.add(nyPipa());
-    }
-
-    public static void main(String[] args) {
-
+        Pipa p = nyPipa();
+        kista.add(p);
+        return p;
     }
 }

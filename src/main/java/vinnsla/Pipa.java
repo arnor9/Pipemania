@@ -12,24 +12,30 @@ public class Pipa {
     //private static String[] att = {"V", "S", "N", "A"};
     private Att inn;
     private Att ut;
-
     private final StringProperty opin = new SimpleStringProperty();
 
-    public Enum Att("V","N","A","S");
+    enum Att {V, N, A, S}
+
+
     // ordinal til þess að fá tölugildið
 
-    public Pipa(String endi1, String endi2) {
-        this.endi1 = endi1;
-        this.endi2 = endi2;
-    }
+    // public Pipa(String endi1, String endi2) {
+    //   this.endi1 = endi1;
+    // this.endi2 = endi2;
+    // }
 
     public Pipa(int t, int r) {
-        this.inn = t;
-        this.ut = r;
+        this.inn = Att.values()[t];
+        this.ut = Att.values()[r];
     }
 
-    att[this.endi1]
-    att[this.endi2]
+    public Pipa() {
+        this.inn = Att.V;
+        this.ut = Att.S;
+    }
+
+    //att[this.endi1]
+    //att[this.endi2]
 
 
     public Att getInn() {
@@ -44,9 +50,9 @@ public class Pipa {
         return opin.get();
     }
 
-    public boolean flaedir(Pipa s) {
-
-    }
+    //  public boolean flaedir(Pipa s) {
+//
+    //  }
 
     //public boolean flaedir(Pipa s) {
     //  if () {

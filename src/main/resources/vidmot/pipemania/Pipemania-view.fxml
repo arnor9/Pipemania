@@ -24,6 +24,12 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
+               <children>
+                  <TextField fx:id="Mynd" prefHeight="79.0" prefWidth="100.0" />
+                  <TextField prefHeight="70.0" prefWidth="100.0" GridPane.rowIndex="1" />
+                  <TextField prefHeight="71.0" prefWidth="100.0" GridPane.rowIndex="2" />
+                  <TextField prefHeight="85.0" prefWidth="100.0" GridPane.rowIndex="3" />
+               </children>
                 </GridPane>
             </children>
         </VBox>
@@ -75,7 +81,7 @@
             </children>
         </HBox>
         <Button layoutY="339.0" mnemonicParsing="false" onAction="#fxAthFlaedir" prefHeight="61.0" prefWidth="600.0" text="Flæðir" />
-        <TextField layoutX="167.0" layoutY="2.0" prefHeight="26.0" prefWidth="160.0" />
+        <TextField fx:id="fxStig" layoutX="167.0" layoutY="2.0" prefHeight="26.0" prefWidth="160.0" />
         <Label layoutX="133.0" layoutY="7.0" prefHeight="17.0" prefWidth="32.0" text="Stig:" />
     </children>
 </Pane>
