@@ -1,18 +1,24 @@
 .SA, .AS{
     -fx-background-image: url("myndir/SA.jpg");
+    -fx-background-size: 50px;
 }
 .NS, .SN{
     -fx-background-image: url("myndir/SN.jpg");
+    -fx-background-size: 50px;
 }
 .VA, .AV{
     -fx-background-image: url("myndir/VA.jpg");
+    -fx-background-size: 50px;
 }
 .VS, .SV{
     -fx-background-image: url("myndir/SV.jpg");
+    -fx-background-size: 50px;
 }
 .VN, .NV{
     -fx-background-image: url("myndir/NV.jpg");
+    -fx-background-size: 50px;
 }
 .NA, .AN{
     -fx-background-image: url("myndir/NA.jpg");
+    -fx-background-size: 50px;
 }

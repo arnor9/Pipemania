@@ -29,6 +29,7 @@ public class Pipukista {
     public Pipa naestaPipa() {
         Pipa nedst;
         nedst = kista.get(0);
+
         // Skila myndinni á sinn stað
         kista.remove(nedst);
         Pipa p = nyPipa();

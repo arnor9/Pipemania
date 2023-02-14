@@ -4,6 +4,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.ObservableList;
 
 public class Pipemania {
     private IntegerProperty Stig = new SimpleIntegerProperty();
@@ -14,6 +15,10 @@ public class Pipemania {
 
     public Pipemania() {
         Stig.set(0);
+    }
+
+    public static ObservableList<Pipa> getPipukista() {
+        return
     }
 
     public IntegerProperty getStig() {

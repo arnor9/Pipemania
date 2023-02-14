@@ -13,6 +13,7 @@ public class Pipa {
     private Att inn;
     private Att ut;
     private final StringProperty opin = new SimpleStringProperty();
+    private String stefna;
 
     enum Att {V, N, A, S}
 
@@ -27,14 +28,11 @@ public class Pipa {
     public Pipa(int t, int r) {
         this.inn = Att.values()[t];
         this.ut = Att.values()[r];
+        System.out.println(getStefna());
     }
 
     //Skeita saman áttunum til þess að fá nafni ð pípunni
 
-    public Pipa() {
-        this.inn = Att.V;
-        this.ut = Att.S;
-    }
 
     //att[this.endi1]
     //att[this.endi2]
@@ -46,6 +44,12 @@ public class Pipa {
 
     public Att getUt() {
         return ut;
+    }
+
+    public String getStefna() {
+        stefna = inn.name() + ut.name();
+        System.out.println(stefna);
+        return stefna;
     }
 
     public String getOpin() {
